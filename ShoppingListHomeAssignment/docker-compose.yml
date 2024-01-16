@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres
+    container_name: home-assignment-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: pass123
+      POSTGRES_USER: shahar
+      POSTGRES_DB: postgres_DB
